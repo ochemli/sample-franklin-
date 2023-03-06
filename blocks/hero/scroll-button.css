@@ -1,0 +1,30 @@
+.scroll-button {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  div .scroll-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .scroll-button a {
+    position: absolute;
+    text-align: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size-xs);
+    font-weight: 400;
+    bottom: 0%;
+  }
+  
+  .scroll-button a::after {
+      content: url('../../icons/chevron-down.svg');
+      display: inline-block;
+      width: 100%;
+      height: auto;
+  }
+}

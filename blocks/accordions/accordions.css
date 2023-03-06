@@ -1,0 +1,102 @@
+.accordions {
+  color: white;
+}
+
+.accordions .accordion-wrapper {
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.accordions .accordion-header {
+  padding: 20px 0;
+  margin: 0;
+}
+
+.accordions .accordion-button {
+  background: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 8px 0;
+  margin: 0 25px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  white-space: normal;
+  display: flex;
+  overflow: visible;
+  line-height: 39px;
+  align-items: flex-start;
+  border: none;
+}
+
+.accordions .accordion-icon {
+  background-image: url("/media/minus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+  min-width: 40px;
+}
+
+.accordions .accordion-button::after {
+  content: "";
+  border: 1px solid #7e8082;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+}
+
+.accordions .accordion-collapsed .accordion-icon {
+  background-image: url("/media/plus.png");
+}
+
+.accordions .accordion-panel {
+  padding: 27px 27px 27px 90px;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.accordions .accordion-panel-hidden {
+  display: none;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .accordions .accordion-button {
+    margin: 0;
+  }
+
+  .accordions .accordion-panel {
+    padding-left: 40px;
+    line-height: 22px;
+  }
+
+  .accordions .accordion-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    min-width: 25px;
+  }
+
+  .button-text {
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .faq-accordions.accordions-container {
+    background-image: url("/media/parallax3.png"), url("/media/parallax4.png");
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+  }
+}
