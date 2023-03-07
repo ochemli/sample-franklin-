@@ -37,6 +37,7 @@
 
 .hero h1 {
    font-family: var(--heading-font-family);
+   color: #f7c20d !important;
    text-transform: uppercase;
    font-size: var(--heading-font-size-xl);
    line-height: 50px;
@@ -54,6 +55,7 @@
 
 .hero h1 + h3 {
     font-family: var(--hero-text-font-family);
+    color: #f7c20d !important;
     font-size: var(--heading-font-size-xs);
     line-height: 25px;
     text-transform: uppercase;

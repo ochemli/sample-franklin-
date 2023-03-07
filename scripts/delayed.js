@@ -32,12 +32,6 @@ const fireGTM = (w, d, s, l, i) => {
   f.parentNode.insertBefore(j, f);
 };
 
-// OneTrust Cookies Consent Notice start
-loadScript('https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', {
-  type: 'text/javascript',
-  charset: 'UTF-8',
-  'data-domain-script': '078b3e5b-9ab3-4e0f-99e4-1d0b7ff41e53',
-});
 
 fireGTM(window, document, 'script', 'dataLayer', 'GTM-NRP6TBV');
 window.OptanonWrapper = () => {};
