@@ -32,7 +32,7 @@ header nav {
   box-sizing: border-box;
   display: grid;
   grid-template:
-    'brand brand hamburger' var(--nav-height)
+    'hamburger' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 2em;
@@ -82,7 +82,7 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: ;
+  background-color: var(--background-color);
   color: inherit;
   overflow: initial;
   text-overflow: initial;
@@ -151,14 +151,14 @@ header nav[aria-expanded=true] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-/* brand */
+/* brand 
 header .nav-brand {
   grid-area: brand;
   flex-basis: 128px;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
-}
+}*/
 
 /* sections */
 header nav .nav-sections {
@@ -166,7 +166,7 @@ header nav .nav-sections {
   flex: 1 1 auto;
   display: none;
   visibility: hidden;
-  background-color: #f7c20d;
+  background-color: var(--overlay-color);
 }
 
 header nav[aria-expanded=true] .nav-sections {
